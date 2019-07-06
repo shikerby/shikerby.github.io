@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customize Bulma</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.bootcss.com/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/" class="navbar-item has-text-link has-text-weight-bold is-size-3">buzzFE.com</a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+
+                    <a class="navbar-item">
+                        Documentation
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                About
+                            </a>
+                            <a class="navbar-item">
+                                Jobs
+                            </a>
+                            <a class="navbar-item">
+                                Contact
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Report an issue
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-half">
+                        <h1 class="title is-white">
+                            <a class="has-text-white" href="http://shikerby.github.io">大鹏小站</a>
+                        </h1>
+                        <!-- <h2 class="subtitle">
+                            Primary bold subtitle
+                        </h2> -->
+                        <p>
+                            有朋自远方来，不亦乐乎！
+                        </p>
+                        <p>
+                            有朋自远方来，不亦乐乎！
+                        </p>
+                        <p>
+                            这是一个 buzzfe.com 网站前端开发技术试验博客
+                        </p>
+                        <br>
+
+                        <div class="field has-addons">
+                            <div class="control has-icons-left is-expanded">
+                                <input class="input is-medium is-shadowless" type="text" placeholder="众里寻他千百度...">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <div class="control">
+                                <a class="button is-success is-medium">
+                                    Search
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="column"></div>
+                    <div class="column">
+                        <div class="box">
+                            <form action="." method="post">
+                                <div class="field">
+                                    <label class="label">用户名：</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-medium" type="text" placeholder="input email">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help is-success"></p>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Email：</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-medium" type="text" placeholder="input email">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                        <span class="icon is-small is-right">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help is-success"></p>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">密码：</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-medium" type="password" placeholder="password">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-key"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help is-success"></p>
+                                </div>
+                                <br>
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="button is-primary is-large is-fullwidth" type="submit" value="注册">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Primary bold title
+                </h1>
+                <h2 class="subtitle">
+                    Primary bold subtitle
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-three-quarters">
+                    <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-8">
+                            <div class="tile">
+                                <div class="tile is-parent is-vertical">
+                                    <article class="tile is-child notification is-primary">
+                                        <p class="title">Vertical...</p>
+                                        <p class="subtitle">Top tile</p>
+                                    </article>
+                                    <article class="tile is-child notification is-warning">
+                                        <p class="title">...tiles</p>
+                                        <p class="subtitle">Bottom tile</p>
+                                    </article>
+                                </div>
+                                <div class="tile is-parent">
+                                    <article class="tile is-child notification is-info">
+                                        <p class="title">Middle tile</p>
+                                        <p class="subtitle">With an image</p>
+                                        <figure class="image is-4by3">
+                                            <img src="https://bulma.io/images/placeholders/640x480.png">
+                                        </figure>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-danger">
+                                    <p class="title">Wide tile</p>
+                                    <p class="subtitle">Aligned with the right tile</p>
+                                    <div class="content">
+                                        <!-- Content -->
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-success">
+                                <div class="content">
+                                    <p class="title">Tall tile</p>
+                                    <p class="subtitle">With even more content</p>
+                                    <div class="content">
+                                        Content
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/images/placeholders/96x96.png"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                    <p class="subtitle is-6">@johnsmith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                <a href="#">#css</a> <a href="#">#responsive</a>
+                                <br>
+                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container">
+            <p class="subtitle">
+                Modern CSS framework based on <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
+            </p>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-medium is-primary" type="text" placeholder="Input">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large is-info" type="text" placeholder="Input">
+                </div>
+            </div>
+
+            <div class="field">
+                <p class="control">
+                    <span class="select">
+                        <select>
+                            <option>Select dropdown</option>
+                        </select>
+                    </span>
+                </p>
+            </div>
+            <div class="box is-shadowless">
+                <!-- <video controls>
+                    <source src="雷神2：黑暗世界.BD1280超清特效国英双语双字.mp4" type="video/mp4">
+                </video> -->
+            </div>
+            <ul>
+                <li>hello</li>
+                <li>world</li>
+                <li>Wisdom</li>
+                <li>Courage</li>
+                <li>Love</li>
+                <li>Python</li>
+            </ul>
+
+            <div class="buttons">
+                <a class="button is-warning">Primary</a>
+                <a class="button is-link">Link</a>
+            </div>
+            <hr>
+
+            <a href="shikerby/github.io">大鹏小站</a>
+            <hr>
+            <div class="buttons has-addons">
+                <span class="button is-primary">Yes</span>
+                <span class="button is-info">Maybe</span>
+                <span class="button is-selected">No</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
