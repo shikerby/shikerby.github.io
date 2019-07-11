@@ -141,7 +141,7 @@
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
@@ -284,7 +284,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif; }
+  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif; }
 
 code,
 pre {
@@ -820,13 +820,13 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif !important; }
+  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif !important; }
+  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif !important; }
+  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -1071,7 +1071,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .box {
   background-color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #757763;
   display: block;
@@ -2108,7 +2108,7 @@ a.box:active {
 
 .notification {
   background-color: whitesmoke;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative; }
   .notification a:not(.button):not(.dropdown-item) {
@@ -2455,7 +2455,7 @@ a.box:active {
 .tag:not(body) {
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #757763;
   display: inline-flex;
   font-size: 0.75rem;
@@ -2646,7 +2646,7 @@ a.tag:hover {
 .input, .textarea, .select select {
   background-color: white;
   border-color: #dbdbdb;
-  border-radius: 3px;
+  border-radius: 2px;
   color: #363636; }
   .input::-moz-placeholder, .textarea::-moz-placeholder, .select select::-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
@@ -3097,7 +3097,7 @@ a.tag:hover {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
   .file.has-name.is-empty .file-cta {
-    border-radius: 3px; }
+    border-radius: 2px; }
   .file.has-name.is-empty .file-name {
     display: none; }
   .file.is-boxed .file-label {
@@ -3120,9 +3120,9 @@ a.tag:hover {
   .file.is-boxed.is-large .file-icon .fa {
     font-size: 35px; }
   .file.is-boxed.has-name .file-cta {
-    border-radius: 3px 3px 0 0; }
+    border-radius: 2px 2px 0 0; }
   .file.is-boxed.has-name .file-name {
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 2px 2px;
     border-width: 0 1px 1px; }
   .file.is-centered {
     justify-content: center; }
@@ -3134,9 +3134,9 @@ a.tag:hover {
   .file.is-right {
     justify-content: flex-end; }
     .file.is-right .file-cta {
-      border-radius: 0 3px 3px 0; }
+      border-radius: 0 2px 2px 0; }
     .file.is-right .file-name {
-      border-radius: 3px 0 0 3px;
+      border-radius: 2px 0 0 2px;
       border-width: 1px 0 1px 1px;
       order: -1; }
 
@@ -3170,7 +3170,7 @@ a.tag:hover {
 .file-cta,
 .file-name {
   border-color: #dbdbdb;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 1em;
   padding-left: 1em;
   padding-right: 1em;
@@ -3554,7 +3554,7 @@ a.tag:hover {
 
 .dropdown-content {
   background-color: white;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   padding-bottom: 0.5rem;
   padding-top: 0.5rem; }
@@ -3593,7 +3593,7 @@ button.dropdown-item {
   align-items: center;
   justify-content: space-between; }
   .level code {
-    border-radius: 3px; }
+    border-radius: 2px; }
   .level img {
     display: inline-block;
     vertical-align: top; }
@@ -3661,7 +3661,7 @@ button.dropdown-item {
 
 .list {
   background-color: white;
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
 
 .list-item {
@@ -3670,11 +3670,11 @@ button.dropdown-item {
   .list-item:not(a) {
     color: #757763; }
   .list-item:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; }
   .list-item:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px; }
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; }
   .list-item:not(:last-child) {
     border-bottom: 1px solid #dbdbdb; }
   .list-item.is-active {
@@ -3770,7 +3770,7 @@ a.list-item {
 
 .message {
   background-color: whitesmoke;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 1rem; }
   .message strong {
     color: currentColor; }
@@ -3867,7 +3867,7 @@ a.list-item {
 .message-header {
   align-items: center;
   background-color: #757763;
-  border-radius: 3px 3px 0 0;
+  border-radius: 2px 2px 0 0;
   color: #fff;
   display: flex;
   font-weight: 700;
@@ -3886,7 +3886,7 @@ a.list-item {
 
 .message-body {
   border-color: #dbdbdb;
-  border-radius: 3px;
+  border-radius: 2px;
   border-style: solid;
   border-width: 0 0 0 4px;
   color: #757763;
@@ -3952,8 +3952,8 @@ a.list-item {
 
 .modal-card-head {
   border-bottom: 1px solid #dbdbdb;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 
 .modal-card-title {
   color: #363636;
@@ -3963,8 +3963,8 @@ a.list-item {
   line-height: 1; }
 
 .modal-card-foot {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-top: 1px solid #dbdbdb; }
   .modal-card-foot .button:not(:last-child) {
     margin-right: 0.5em; }
@@ -4644,7 +4644,7 @@ a.navbar-item,
         align-items: center; }
       .navbar.is-spaced a.navbar-item,
       .navbar.is-spaced .navbar-link {
-        border-radius: 3px; }
+        border-radius: 2px; }
     .navbar.is-transparent a.navbar-item:focus, .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
     .navbar.is-transparent .navbar-link:focus,
     .navbar.is-transparent .navbar-link:hover,
@@ -4675,7 +4675,7 @@ a.navbar-item,
       transform: rotate(135deg) translate(0.25em, -0.25em); }
     .navbar-item.has-dropdown-up .navbar-dropdown {
       border-bottom: 2px solid #dbdbdb;
-      border-radius: 6px 6px 0 0;
+      border-radius: 4px 4px 0 0;
       border-top: none;
       bottom: 100%;
       box-shadow: 0 -8px 8px rgba(10, 10, 10, 0.1);
@@ -4701,8 +4701,8 @@ a.navbar-item,
 
   .navbar-dropdown {
     background-color: white;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-top: 2px solid #dbdbdb;
     box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
     display: none;
@@ -4724,7 +4724,7 @@ a.navbar-item,
         background-color: whitesmoke;
         color: #FA7C91; }
     .navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed {
-      border-radius: 6px;
+      border-radius: 4px;
       border-top: none;
       box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
       display: block;
@@ -4925,7 +4925,7 @@ a.navbar-item,
 
 .panel-heading {
   background-color: whitesmoke;
-  border-radius: 3px 3px 0 0;
+  border-radius: 2px 2px 0 0;
   color: #363636;
   font-size: 1.25em;
   font-weight: 300;
@@ -5048,7 +5048,7 @@ label.panel-block {
     justify-content: flex-end; }
   .tabs.is-boxed a {
     border: 1px solid transparent;
-    border-radius: 3px 3px 0 0; }
+    border-radius: 2px 2px 0 0; }
     .tabs.is-boxed a:hover {
       background-color: whitesmoke;
       border-bottom-color: #dbdbdb; }
@@ -5072,9 +5072,9 @@ label.panel-block {
   .tabs.is-toggle li + li {
     margin-left: -1px; }
   .tabs.is-toggle li:first-child a {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 2px 0 0 2px; }
   .tabs.is-toggle li:last-child a {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 2px 2px 0; }
   .tabs.is-toggle li.is-active a {
     background-color: #FA7C91;
     border-color: #FA7C91;
