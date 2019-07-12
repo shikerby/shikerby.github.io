@@ -4,9 +4,13 @@
 // @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 // Set your brand colors
-$purple: #8A4D76;
+$purple: #951c48;
+$green: #20a162;
+$orange: #fba414;
+$blue: #51c4d3;
+$customColor: #f03752;
 $pink: #FA7C91;
-$brown: #757763;
+$brown: #0f1423;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
@@ -15,6 +19,8 @@ $family-sans-serif: "Segoe UI","Microsoft Yahei Light", "Microsoft JhengHei", sa
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
+$warning: $orange;
+$info: $blue;
 $link: $pink;
 
 $radius: 2px;
