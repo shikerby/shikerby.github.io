@@ -30,6 +30,22 @@ $footer-background-color: $beige-lighter;
 
 @import "./bulma/bulma.sass";
 
+// 定义一些固定高度 以使得某些排榜更方便
+.is-height-2 {
+    height: 48px;
+    overflow: hidden;
+}
+
+.is-height-3 {
+    height: 72px;
+    overflow: hidden;
+}
+.is-height-5 {
+    height: 120px;
+    overflow: hidden;
+}
+
+
 a {
     color: #363636;
 

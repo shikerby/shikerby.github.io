@@ -6803,6 +6803,18 @@ label.panel-block {
   background-color: #EFF0EB;
   padding: 3rem 1.5rem 6rem; }
 
+.is-height-2 {
+  height: 48px;
+  overflow: hidden; }
+
+.is-height-3 {
+  height: 72px;
+  overflow: hidden; }
+
+.is-height-5 {
+  height: 120px;
+  overflow: hidden; }
+
 a {
   color: #363636; }
   a:hover {
