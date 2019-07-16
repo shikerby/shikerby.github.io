@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+$std-height: 48px !default;
+
+$news-color: $text !default;
+$news-background-color: $white !default;
+$news-spacing: 10px !default;
+$news-shadow: 0 2px 2px 0 rgba(20, 23, 28, 0.15) !default;
+$news-radius: $radius !default;
+$news-height: $std-height * 2;
+$news-width: $std-height * 3;
+
+$news-hover-shadow: 0 4px 8px rgba($black, .15);
+
+.news {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: $news-radius;
+    background-color: $news-background-color;
+    box-shadow: $news-shadow;
+
+    &:hover {
+        box-shadow: $news-hover-shadow;
+    }
+
+    &.is-small {
+
+        .news-left,
+        .news-right {
+            flex-basis: $news-width * 0.75;
+            height: $news-height * 0.75;
+        }
+
+        .news-content {
+            height: $news-height * 0.75;
+        }
+    }
+
+    &.is-medium {
+
+        .news-left,
+        .news-right {
+            flex-basis: $news-width * 1.25;
+            height: $news-height * 1.25;
+        }
+
+        .news-content {
+            height: $news-height * 1.25;
+        }
+    }
+
+    &.is-large {
+
+        .news-left,
+        .news-right {
+            flex-basis: $news-width * 1.5;
+            height: $news-height * 1.5;
+        }
+
+        .news-content {
+            height: $news-height * 1.5;
+        }
+    }
+}
+
+.news-left,
+.news-right {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: $news-width;
+    height: $news-height;
+    border-radius: $news-radius;
+}
+
+.news-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    align-items: center;
+    height: $news-height;
+    margin: 0 #{$news-spacing * 2};
+    overflow: hidden;
+}
+
+
+@mixin margin-bottom-block($spacing: $news-spacing) {
+    &:not(:last-child) {
+        margin-bottom: $spacing;
+    }
+}
+
+%mb-block {
+    display: block;
+    @include margin-bottom-block;
+}
+
+.infolist {
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    @extend %mb-block;
+}
+
+.goto-top {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+// 修饰

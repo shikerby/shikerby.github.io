@@ -1,13 +1,10 @@
 @charset "utf-8";
 
-// Import a Google Font
-// @import url(http://fonts.googleapis.com/css?family=Roboto);
-
 // Set your brand colors
-$purple: #951c48;
+$purple: purple;
 $green: #20a162;
 $orange: #fba414;
-$blue: #51c4d3;
+$blue: Dodgerblue;
 $customColor: #f03752;
 $pink: #FA7C91;
 $brown: #0f1423;
@@ -15,7 +12,10 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
-$family-sans-serif: "Segoe UI","Microsoft Yahei Light", "Microsoft JhengHei", sans-serif;
+$family-sans-serif: "Segoe UI",
+"Microsoft Yahei Light",
+"Microsoft JhengHei",
+sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
@@ -26,25 +26,48 @@ $link: $pink;
 $radius: 2px;
 $radius-large: 4px;
 
+$card-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+
 $footer-background-color: $beige-lighter;
 
 @import "./bulma/bulma.sass";
+@import "news.scss";
 
 // 定义一些固定高度 以使得某些排榜更方便
-.is-height-2 {
-    height: 48px;
-    overflow: hidden;
+$baseHeight: 24px;
+
+@for $i from 2 through 7 {
+    .is-height-#{$i}{
+        height: $baseHeight * $i;
+    }
 }
 
-.is-height-3 {
-    height: 72px;
-    overflow: hidden;
-}
-.is-height-5 {
-    height: 120px;
-    overflow: hidden;
+
+.sticky {
+    align-items: center;
+    color: #363636;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.75em 1em;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 2px rgba(20, 23, 28, .15);
 }
 
+
+.sticky-icon {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    .fa {
+        line-height: inherit;
+    }
+}
+
+a.sticky {
+    &:hover {
+        background-color: $info;
+        color: #fff;
+    }
+}
 
 a {
     color: #363636;
