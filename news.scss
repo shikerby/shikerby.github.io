@@ -97,6 +97,8 @@ $news-hover-shadow: 0 4px 8px rgba($black, .15);
     @include margin-bottom-block;
 }
 
+// 信息列表容器和信息项
+
 .infolist {
     margin-bottom: 1.5rem;
 }
@@ -105,10 +107,101 @@ $news-hover-shadow: 0 4px 8px rgba($black, .15);
     @extend %mb-block;
 }
 
+
+// 回到顶部类
 .goto-top {
     position: fixed;
     bottom: 100px;
     right: 100px;
 }
 
-// 修饰
+// 自定义的 一些高度修饰符
+$text-size: 1rem;
+$text-lineheight: 1.5;
+
+@for $i from 2 through 4 {
+    .is-height-#{$i} {
+        height: $i * $text-size * $text-lineheight;
+    }
+}
+
+// 定义一些信息分类小方块
+.sticky {
+    align-items: center;
+    color: #363636;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.75em 1em;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 2px rgba(20, 23, 28, .15);
+}
+
+.sticky-icon {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    .fa {
+        line-height: inherit;
+    }
+}
+
+a.sticky {
+    &:hover {
+        background-color: $info;
+        color: #fff;
+    }
+}
+
+// 定义分享小组件
+$share-dimension: 48px !default;
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.is-small {
+        .share-item {
+            flex: 0 0 #{$share-dimension * 2 / 3};
+            height: $share-dimension * 2 / 3;
+            line-height: #{$share-dimension * 2 / 3};
+        }
+    }
+
+    &.is-round {
+        .share-item {
+            border-radius: $share-dimension / 2;
+            margin: 0 2px;
+        }
+    }
+
+    &.is-vertical {
+        position: absolute;
+        left: -#{$share-dimension * 2};
+        flex-direction: column;
+
+        .share-item {
+            width: $share-dimension;
+        }
+
+        &.is-small {
+            left: -#{$share-dimension * 3 / 2};
+
+            .share-item {
+                width: $share-dimension * 2 / 3;
+            }
+        }
+    }
+}
+
+.share-item {
+    flex: 0 0 $share-dimension;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: $share-dimension;
+    cursor: pointer;
+
+    &:hover {
+        background-color: tomato;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    }
+}
