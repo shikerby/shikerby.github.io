@@ -107,6 +107,9 @@ $news-hover-shadow: 0 4px 8px rgba($black, .15);
     @extend %mb-block;
 }
 
+.wrap {
+    margin-bottom: 1.5rem;
+}
 
 // 回到顶部类
 .goto-top {
@@ -157,6 +160,13 @@ $share-dimension: 48px !default;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.at-left {
+        justify-content: flex-start;
+    }
+    &.at-right {
+        justify-content: flex-end;
+    }
 
     &.is-small {
         .share-item {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Article</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://cdn.bootcss.com/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/mystyle.css">
 </head>
@@ -29,26 +29,32 @@
         </div>
     </nav>
 
-    <section class="hero is-primary">
+    <section class="hero is-primary is-small">
         <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    Primary bold title
-                </h1>
-                <h2 class="subtitle">
-                    Primary bold subtitle
-                </h2>
+            <div class="container is-height-2">
+                <h1>Hello EveryOne</h1>
+                <h1>Hello EveryOne</h1>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="columns">
+            <div class="columns is-variable is-6">
                 <div class="column is-9">
+
+                    <nav class="breadcrumb">
+                        <ul>
+                            <li><a href="#">Channel</a></li>
+                            <li><a href="#">Topic</a></li>
+                            <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+                        </ul>
+                    </nav>
+
                     <div class="content is-relative">
-                        <h1 class="title">Meet Django</h1>
-                        <div class="share is-vertical is-small">
+                        <h1 class="title has-text-centered">Meet Django</h1>
+
+                        <!-- <div class="share is-vertical is-small">
                             <a href="">
                                 <div class="share-item">
                                     <i class="fab fa-facebook-f"></i>
@@ -69,7 +75,8 @@
                                     <i class="fas fa-envelope"></i>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
+
                         <blockquote>
                             Meet Django
                             Django is a high-level Python Web framework that encourages rapid development and
@@ -83,7 +90,7 @@
 
                         <hr>
 
-                        <div class="share is-round is-small">
+                        <div class="share is-round is-small at-right">
                             <div class="share-item">
                                 <i class="fab fa-facebook-f"></i>
                             </div>
@@ -99,19 +106,13 @@
                         </div>
                     </div>
 
-                    <div class="list">
-                        <div class="list-item">要么忙于生存</div>
-                        <div class="list-item">爱你在心口难看</div>
-                        <div class="list-item">大庇天下寒士俱欢颜</div>
-                        <div class="list-item">nothing is impossible</div>
-                        <div class="list-item">Just Do it</div>
-                        <hr>
-                        <a href="" class="list-item">google</a>
-                        <a href="" class="list-item">google</a>
-                        <a href="" class="list-item">google</a>
-                        <a href="" class="list-item">google</a>
-                        <a href="" class="list-item">google</a>
-                    </div>
+                    <ul class="list">
+                        <li class="list-item">要么忙于生存</li>
+                        <li class="list-item">爱你在心口难看</li>
+                        <li class="list-item">大庇天下寒士俱欢颜</li>
+                        <li class="list-item">nothing is impossible</li>
+                        <li class="list-item">Just Do it</li>
+                    </ul>
 
                     <ul class="infolist">
                         <li class="info-item">
@@ -261,14 +262,21 @@
                             </a>
                         </li>
                     </ul>
+
+                    <hr>
+                    <div class="comment">
+                        Hello world
+                    </div>
+
                 </div>
                 <div class="column is-3">
-                    <div class="level">
+                    <div class="wrap">
                         <a href="">
                             <div class="media">
                                 <div class="media-left">
                                     <figure class="image is-64x64">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                        <img src="https://bulma.io/images/placeholders/96x96.png"
+                                            alt="Placeholder image">
                                     </figure>
                                 </div>
                                 <div class="media-content">
@@ -283,7 +291,7 @@
                         <div class="level-item has-text-centered">
                             <div>
                                 <p class="heading">Tweets</p>
-                                <p class="title">3,456</p>
+                                <p class="title">123</p>
                             </div>
                         </div>
                         <!-- <div class="level-item has-text-centered">
@@ -334,6 +342,18 @@
             </div>
         </div>
     </section>
+
+
+    <!-- 回到顶部 -->
+    <div class="goto-top">
+        <a class="button is-large is-danger" href="#topNav" title="回到顶部">
+            <span class="icon is-medium">
+                <i class="fas fa-arrow-up fa-lg"></i>
+            </span>
+        </a>
+    </div>
+    <!-- 回到顶部结束 -->
+
 
 </body>
 

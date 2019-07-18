@@ -9209,6 +9209,10 @@ label.panel-block:hover {
   margin-bottom: 1.5rem;
 }
 
+.wrap {
+  margin-bottom: 1.5rem;
+}
+
 .goto-top {
   position: fixed;
   bottom: 100px;
@@ -9254,6 +9258,12 @@ a.sticky:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.share.at-left {
+  justify-content: flex-start;
+}
+.share.at-right {
+  justify-content: flex-end;
 }
 .share.is-small .share-item {
   flex: 0 0 32px;
