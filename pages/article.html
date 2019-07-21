@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <nav id="topNav" class="navbar">
         <div class="container">
             <div class="navbar-brand">
@@ -54,31 +53,7 @@
                     <div class="content is-relative">
                         <h1 class="title has-text-centered">Meet Django</h1>
 
-                        <!-- <div class="share is-vertical is-small">
-                            <a href="">
-                                <div class="share-item">
-                                    <i class="fab fa-facebook-f"></i>
-                                </div>
-                            </a>
-                            <a href="">
-                                <div class="share-item">
-                                    <i class="fab fa-twitter"></i>
-                                </div>
-                            </a>
-                            <a href="">
-                                <div class="share-item">
-                                    <i class="fab fa-tumblr"></i>
-                                </div>
-                            </a>
-                            <a href="">
-                                <div class="share-item">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                            </a>
-                        </div> -->
-
                         <blockquote>
-                            Meet Django
                             Django is a high-level Python Web framework that encourages rapid development and
                             clean,
                             pragmatic design. Built by experienced developers, it takes care of much of the
@@ -105,6 +80,40 @@
                             </div>
                         </div>
                     </div>
+
+                    <pre class="sourceCode python">
+                        <code class="sourceCode python">
+                            def test_read_write_field():
+                            # Python code
+                            class A(object):
+                                pass
+                            obj = A()
+                            obj.a = 1
+                            assert obj.a == 1
+                        
+                            obj.b = 5
+                            assert obj.a == 1
+                            assert obj.b == 5
+                        
+                            obj.a = 2
+                            assert obj.a == 2
+                            assert obj.b == 5
+                        
+                            # Object model code
+                            A = Class(name="A", base_class=OBJECT, fields={}, metaclass=TYPE)
+                            obj = Instance(A)
+                            obj.write_attr("a", 1)
+                            assert obj.read_attr("a") == 1
+                        
+                            obj.write_attr("b", 5)
+                            assert obj.read_attr("a") == 1
+                            assert obj.read_attr("b") == 5
+                        
+                            obj.write_attr("a", 2)
+                            assert obj.read_attr("a") == 2
+                            assert obj.read_attr("b") == 5
+                        </code>
+                    </pre>
 
                     <ul class="list">
                         <li class="list-item">要么忙于生存</li>
@@ -319,8 +328,18 @@
                             General
                         </p>
                         <ul class="menu-list">
-                            <li><a>Dashboard</a></li>
-                            <li><a>Customers</a></li>
+                            <li>
+                                <a>
+                                    <span class="icon"><i class="fas fa-anchor"></i></span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-active">
+                                    <span class="icon"><i class="fas fa-globe"></i></span>
+                                    <span>Customers</span>
+                                </a>
+                            </li>
                             <li><a>Team Settings</a></li>
                             <li>
                                 <a class="is-active">Manage Your Team</a>
@@ -346,7 +365,7 @@
 
     <!-- 回到顶部 -->
     <div class="goto-top">
-        <a class="button is-large is-danger" href="#topNav" title="回到顶部">
+        <a class="button is-large is-primary" href="#topNav" title="回到顶部">
             <span class="icon is-medium">
                 <i class="fas fa-arrow-up fa-lg"></i>
             </span>

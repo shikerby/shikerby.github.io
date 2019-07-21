@@ -122,7 +122,7 @@ $news-hover-shadow: 0 4px 8px rgba($black, .15);
 $text-size: 1rem;
 $text-lineheight: 1.5;
 
-@for $i from 2 through 4 {
+@for $i from 2 through 16 {
     .is-height-#{$i} {
         height: $i * $text-size * $text-lineheight;
     }
@@ -149,7 +149,7 @@ $text-lineheight: 1.5;
 
 a.sticky {
     &:hover {
-        background-color: $info;
+        background-color: $primary;
         color: #fff;
     }
 }

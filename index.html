@@ -5,498 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Customize Bulma</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Twitter</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://cdn.bootcss.com/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="../css/mystyle.css">
 </head>
 
 <body>
-    <nav id="topNav" class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <a href="/" class="navbar-item has-text-danger has-text-weight-bold is-size-3">buzzFE.com</a>
-            </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
-                    </a>
-
-                    <a class="navbar-item">
-                        Documentation
-                    </a>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            More
+    <div class="hero is-primary is-fullheight is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item title has-text-white">
+                            meetfr
                         </a>
-
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item">
-                                About
-                            </a>
-                            <a class="navbar-item">
-                                Jobs
-                            </a>
-                            <a class="navbar-item">
-                                Contact
-                            </a>
-                            <hr class="navbar-divider">
-                            <a class="navbar-item">
-                                Report an issue
-                            </a>
-                        </div>
                     </div>
-                </div>
-
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-primary">
-                                <strong>Sign up</strong>
-                            </a>
-                            <a class="button is-light">
-                                Log in
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero is-primary is-bold">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-half">
-                        <div class="content">
-                            <h1 class="title is-2 is-spaced">
-                                <a class="has-text-white" href="http://shikerby.github.io">大鹏小站</a>
-                            </h1>
-                            <h3 class="subtitle is-4">
-                                How happy we are, To meet friends from afar!
-                            </h3>
-                            <p>
-                                这是一个 buzzfe.com 网站前端开发技术试验博客
-                            </p>
-
-                            <div class="field has-addons">
-                                <div class="control has-icons-left is-expanded">
-                                    <input class="input is-medium is-shadowless" type="text" placeholder="众里寻他千百度...">
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </div>
-                                <div class="control">
-                                    <a class="button is-success is-medium">
-                                        <!-- <span class="icon">
-                                            <i class="fab fa-stripe-s"></i>
-                                        </span> -->
-                                        <span>Search</span>
-                                    </a>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field is-horizontal">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control">
+                                            <input class="input" type="email" placeholder="Email">
+                                        </p>
+                                    </div>
+                                    <div class="field">
+                                        <p class="control">
+                                            <input class="input" type="password" placeholder="password">
+                                        </p>
+                                    </div>
+                                    <div class="field">
+                                        <p class="control">
+                                            <input class="button is-primary is-inverted" type="submit" value="Sign in">
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column"></div>
-                    <div class="column">
-                        <div class="box">
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <div class="tile is-ancestor">
+                    <div class="tile is-9 is-parent">
+                        <article class="tile is-child notification is-primary">
+                            <div class="content">
+                                <p class="title is-1">Follow your heart</p>
+                                <p>
+                                    <span class="icon"><i class="fab fa-twitter"></i></span>
+                                    <span>关注你的兴趣所在</span>
+                                </p>
+                                <p>
+                                    <span class="icon"><i class="fas fa-eye"></i></span>
+                                    <span>看看正在发生的新鲜事</span>
+                                </p>
+                                <p>
+                                    <span class="icon"><i class="fas fa-comments"></i></span>
+                                    <span>加入讨论</span>
+                                </p>
+                                <p>—— 有朋自远方来，不亦乐乎？</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-3 is-parent">
+                        <article class="tile is-child box is-height-16">
+                            <p class="subtitle has-text-primary">New to Meetfr? join today</p>
                             <form action="." method="post">
                                 <div class="field">
-                                    <label class="label">用户名：</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-medium" type="text" placeholder="input email">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-user"></i>
-                                        </span>
-                                    </div>
-                                    <p class="help is-success"></p>
-                                </div>
-                                <div class="field">
-                                    <label class="label">Email：</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-medium" type="text" placeholder="input email">
-                                        <span class="icon is-small is-left">
+                                    <p class="control has-icons-left">
+                                        <input class="input is-medium" type="text" placeholder="Username">
+                                        <span class="icon is-left">
                                             <i class="fas fa-envelope"></i>
                                         </span>
-                                        <span class="icon is-small is-right">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                    </div>
-                                    <p class="help is-success"></p>
+                                    </p>
+                                    <p class="help"></p>
                                 </div>
-
                                 <div class="field">
-                                    <label class="label">密码：</label>
-                                    <div class="control has-icons-left has-icons-right">
-                                        <input class="input is-medium" type="password" placeholder="password">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-key"></i>
+                                    <p class="control has-icons-left">
+                                        <input class="input is-medium" type="email" placeholder="Email">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-envelope"></i>
                                         </span>
-                                    </div>
-                                    <p class="help is-success"></p>
+                                    </p>
                                 </div>
-                                <br>
                                 <div class="field">
-                                    <div class="control">
-                                        <input class="button is-primary is-large is-fullwidth" type="submit" value="注册">
-                                    </div>
+                                    <p class="control has-icons-left">
+                                        <input class="input is-medium" type="password" placeholder="Password">
+                                        <span class="icon is-left">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="field">
+                                    <p class="control">
+                                        <input class="button is-success is-medium" type="submit" value="Sign up">
+                                    </p>
                                 </div>
                             </form>
-                        </div>
+
+                            <hr>
+                            <p>
+                                <a href="/pages/article.html">浏览一下...</a>
+                            </p>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <a href="/pages/plaza.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-3by2">
-                                    <img src="https://bulma.io/images/placeholders/1280x960.png"
-                                        alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <h3 class="title has-text-success">Javascript</h3>
-                                </div>
-                                <div class="content">
-                                    <div class="is-height-3">
-                                        凡是可以用 JavaScript 来写的应用，最终都会用 JavaScript 重写。
-                                    </div>
-                                    <br>
-                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+        <div class="hero-foot">
+            <nav class="tabs">
+                <div class="container">
+                    <ul>
+                        <li class="is-active"><a>Overview</a></li>
+                        <li><a>Explore</a></li>
+                        <li><a>Custom</a></li>
+                        <li><a>Why meetfr?</a></li>
+                    </ul>
                 </div>
-                <div class="column">
-                    <a href="/pages/article.html">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-3by2">
-                                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <h3 class="title has-text-info">Python</h3>
-                                </div>
-                                <div class="content">
-                                    <div class="is-height-3">
-                                        Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。
-                                        <br>
-                                        <strong>人生苦短，我用 python.</strong>
-                                    </div>
-                                    <br>
-                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <h3 class="title has-text-warning">Django</h3>
-                            </div>
-                            <div class="content">
-                                <div class="is-height-3">
-                                    Django makes it easier to build better Web apps more quickly and with less code.
-                                </div>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <h3 class="title has-text-danger">buzzfe</h3>
-                            </div>
-                            <div class="content">
-                                <div class="is-height-3">
-                                    毫无疑问，单身钻石王老五都渴望有娇妻相伴。
-                                </div>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </nav>
         </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-code"></i>
-                        </span>
-                        Hello Coding
-                    </a>
-                </div>
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-business-time"></i>
-                        </span>
-                        商务
-                    </a>
-                </div>
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-spider"></i>
-                        </span>
-                        爬虫
-                    </a>
-                </div>
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-drafting-compass"></i>
-                        </span>
-                        Design
-                    </a>
-                </div>
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-chess"></i>
-                        </span>
-                        Game Developer
-                    </a>
-                </div>
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-coffee"></i>
-                        </span>
-                        Coffee
-                    </a>
-                </div>
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-music"></i>
-                        </span>
-                        Music
-                    </a>
-                </div>
-                <div class="column is-one-quarter">
-                    <a href="" class="sticky">
-                        <span class="sticky-icon">
-                            <i class="fas fa-book-reader"></i>
-                        </span>
-                        个人发展
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    Primary bold title
-                </h1>
-                <h2 class="subtitle">
-                    Primary bold subtitle
-                </h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-three-quarters">
-                    <div class="tile is-ancestor">
-                        <div class="tile is-vertical is-8">
-                            <div class="tile">
-                                <div class="tile is-parent is-vertical">
-                                    <article class="tile is-child notification is-primary">
-                                        <p class="title">Vertical...</p>
-                                        <p class="subtitle">Top tile</p>
-                                    </article>
-                                    <article class="tile is-child notification is-warning">
-                                        <p class="title">...tiles</p>
-                                        <p class="subtitle">Bottom tile</p>
-                                    </article>
-                                </div>
-                                <div class="tile is-parent">
-                                    <article class="tile is-child notification is-info">
-                                        <p class="title">Middle tile</p>
-                                        <p class="subtitle">With an image</p>
-                                        <figure class="image is-3by2">
-                                            <img src="https://bulma.io/images/placeholders/640x480.png">
-                                        </figure>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="tile is-parent">
-                                <article class="tile is-child notification is-danger">
-                                    <p class="title">Wide tile</p>
-                                    <p class="subtitle">Aligned with the right tile</p>
-                                    <div class="content">
-                                        <!-- Content -->
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-success">
-                                <div class="content">
-                                    <p class="title">Tall tile</p>
-                                    <p class="subtitle">With even more content</p>
-                                    <div class="content">
-                                        Content
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-48x48">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png"
-                                            alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">John Smith</p>
-                                    <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <p class="subtitle">
-                Modern CSS framework based on <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-            </p>
-
-            <div class="field">
-                <div class="control">
-                    <input class="input is-medium is-primary" type="text" placeholder="Input">
-                </div>
-            </div>
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large is-info" type="text" placeholder="Input">
-                </div>
-            </div>
-
-            <div class="field">
-                <p class="control">
-                    <span class="select">
-                        <select>
-                            <option>Select dropdown</option>
-                        </select>
-                    </span>
-                </p>
-            </div>
-            <div class="box is-shadowless">
-                <!-- g -->
-            </div>
-            <div class="content">
-                <ul>
-                    <li>hello</li>
-                    <li>world</li>
-                    <li>Wisdom</li>
-                    <li>Courage</li>
-                    <li>Love</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-
-            <div class="buttons">
-                <a class="button is-warning">Primary</a>
-                <a class="button is-link">Link</a>
-            </div>
-            <hr>
-
-            <a href="shikerby/github.io">大鹏小站</a>
-            <hr>
-            <div class="buttons has-addons">
-                <span class="button is-primary">Yes</span>
-                <span class="button is-info">Maybe</span>
-                <span class="button is-selected">No</span>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="goto-top">
-        <a class="button is-large is-danger" href="#topNav" title="回到顶部">
-            <span class="icon is-medium">
-                <i class="fas fa-arrow-up fa-lg"></i>
-            </span>
-        </a>
     </div>
-
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
-        </div>
-    </footer>
 </body>
 
 </html>

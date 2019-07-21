@@ -318,7 +318,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif;
+  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif;
 }
 
 code,
@@ -1065,15 +1065,15 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-secondary {
-  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-sans-serif {
-  font-family: "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-monospace {
@@ -9231,6 +9231,54 @@ label.panel-block:hover {
   height: 6rem;
 }
 
+.is-height-5 {
+  height: 7.5rem;
+}
+
+.is-height-6 {
+  height: 9rem;
+}
+
+.is-height-7 {
+  height: 10.5rem;
+}
+
+.is-height-8 {
+  height: 12rem;
+}
+
+.is-height-9 {
+  height: 13.5rem;
+}
+
+.is-height-10 {
+  height: 15rem;
+}
+
+.is-height-11 {
+  height: 16.5rem;
+}
+
+.is-height-12 {
+  height: 18rem;
+}
+
+.is-height-13 {
+  height: 19.5rem;
+}
+
+.is-height-14 {
+  height: 21rem;
+}
+
+.is-height-15 {
+  height: 22.5rem;
+}
+
+.is-height-16 {
+  height: 24rem;
+}
+
 .sticky {
   align-items: center;
   color: #363636;
@@ -9250,7 +9298,7 @@ label.panel-block:hover {
 }
 
 a.sticky:hover {
-  background-color: Dodgerblue;
+  background-color: purple;
   color: #fff;
 }
 
