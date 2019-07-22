@@ -318,7 +318,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif;
+  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif;
 }
 
 code,
@@ -1065,15 +1065,15 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-secondary {
-  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-sans-serif {
-  font-family: "Open Sans", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-monospace {
