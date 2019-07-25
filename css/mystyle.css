@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.font.im/css?family=Roboto");
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -318,7 +319,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif;
+  font-family: "PingFang SC", Roboto, "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif;
 }
 
 code,
@@ -1065,15 +1066,15 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "PingFang SC", Roboto, "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-secondary {
-  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "PingFang SC", Roboto, "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-sans-serif {
-  font-family: "PingFang SC", "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
+  font-family: "PingFang SC", Roboto, "Segoe UI", "Microsoft Yahei Light", "Microsoft JhengHei", sans-serif !important;
 }
 
 .is-family-monospace {
@@ -9150,8 +9151,11 @@ label.panel-block:hover {
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(20, 23, 28, 0.15);
 }
-.news:hover {
-  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.15);
+.news.is-shadowless {
+  border-bottom: 2px solid #f2f2f2;
+}
+.news.is-shadowless:hover {
+  box-shadow: 0 3px 6px rgba(26, 26, 26, 0.15) !important;
 }
 .news.is-small .news-left,
 .news.is-small .news-right {

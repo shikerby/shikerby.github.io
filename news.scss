@@ -10,7 +10,7 @@ $news-radius: $radius !default;
 $news-height: $std-height * 2;
 $news-width: $std-height * 3;
 
-$news-hover-shadow: 0 4px 8px rgba($black, .15);
+$news-hover-shadow: 0 3px 6px rgba(26,26,26, .15);
 
 .news {
     display: flex;
@@ -20,10 +20,15 @@ $news-hover-shadow: 0 4px 8px rgba($black, .15);
     border-radius: $news-radius;
     background-color: $news-background-color;
     box-shadow: $news-shadow;
-
-    &:hover {
-        box-shadow: $news-hover-shadow;
+    
+    &.is-shadowless {
+        border-bottom: 2px solid #f2f2f2;
+        &:hover {
+            box-shadow: $news-hover-shadow !important;
+        }
     }
+    
+    
 
     &.is-small {
 
