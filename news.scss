@@ -22,8 +22,9 @@ $news-hover-shadow: 0 3px 6px rgba(26,26,26, .15);
     box-shadow: $news-shadow;
     
     &.is-shadowless {
-        border-bottom: 2px solid #f2f2f2;
+        border-bottom: 1px solid #dbdbdb;
         &:hover {
+            border-bottom: none;
             box-shadow: $news-hover-shadow !important;
         }
     }
