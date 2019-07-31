@@ -19,6 +19,7 @@ $news-hover-shadow: 0 3px 6px rgba(26,26,26, .15);
     text-align: left;
     border-radius: $news-radius;
     background-color: $news-background-color;
+    padding: 5px;
     box-shadow: $news-shadow;
     
     &.is-shadowless {
@@ -30,7 +31,6 @@ $news-hover-shadow: 0 3px 6px rgba(26,26,26, .15);
     }
     
     
-
     &.is-small {
 
         .news-left,
